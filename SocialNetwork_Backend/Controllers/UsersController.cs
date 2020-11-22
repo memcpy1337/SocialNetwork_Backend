@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SocialNetwork_Backend.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     public class UsersController : ControllerBase
     {
         private readonly UserContext _userContext;
