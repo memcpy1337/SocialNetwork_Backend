@@ -6069,23 +6069,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Администратор\\.nuget\\packages\\": {},
+    "C:\\Users\\artem\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Администратор\\source\\repos\\SocialNetwork_Backend\\SocialNetwork_Backend\\SocialNetwork_Backend.csproj",
+      "projectUniqueName": "C:\\Users\\artem\\Documents\\GitHub\\SocialNetwork_Backend\\SocialNetwork_Backend\\SocialNetwork_Backend.csproj",
       "projectName": "SocialNetwork_Backend",
-      "projectPath": "C:\\Users\\Администратор\\source\\repos\\SocialNetwork_Backend\\SocialNetwork_Backend\\SocialNetwork_Backend.csproj",
-      "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Администратор\\source\\repos\\SocialNetwork_Backend\\SocialNetwork_Backend\\obj\\",
+      "projectPath": "C:\\Users\\artem\\Documents\\GitHub\\SocialNetwork_Backend\\SocialNetwork_Backend\\SocialNetwork_Backend.csproj",
+      "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\artem\\Documents\\GitHub\\SocialNetwork_Backend\\SocialNetwork_Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Администратор\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6146,7 +6146,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

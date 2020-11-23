@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SocialNetwork_Backend.Controllers
 {
-    [Route("api/[controller]/[action]")]
+    [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
         private readonly UserContext _userContext;
@@ -38,6 +38,7 @@ namespace SocialNetwork_Backend.Controllers
             {
                 return NotFound();
             }
+
             return Ok(db);
         }
 

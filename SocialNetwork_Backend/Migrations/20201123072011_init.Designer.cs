@@ -9,7 +9,7 @@ using SocialNetwork_Backend.BDContext;
 namespace SocialNetwork_Backend.Migrations
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20201122052338_init")]
+    [Migration("20201123072011_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
