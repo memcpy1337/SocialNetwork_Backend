@@ -141,3 +141,4 @@ C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\obj\
 C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\obj\Debug\netcoreapp3.1\SocialNetwork_Backend.dll
 C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\obj\Debug\netcoreapp3.1\SocialNetwork_Backend.pdb
 C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\obj\Debug\netcoreapp3.1\SocialNetwork_Backend.genruntimeconfig.cache
+C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\obj\Debug\netcoreapp3.1\SocialNetwork_Backend.csprojAssemblyReference.cache
