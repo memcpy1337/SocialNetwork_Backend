@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SocialNetwork_Backend.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     public class UsersController : ControllerBase
     {
         private readonly UserContext _userContext;
@@ -47,15 +47,54 @@ namespace SocialNetwork_Backend.Controllers
             try
             {
                 int number = _userContext.Users.Count();
-                var db = _userContext.Users.Skip(page * count).Take(count);
+                var db = _userContext.Users.Skip(page * count).Take(count)
+                    .Select(u => new
+                    {
+                        id = u.Id,
+                        name = u.Name,
+                        photoUrl = u.PhotoUrl,
+                        status = u.status,
+                        followed = u.followed
+                    });
                 if (db == null)
                 {
                     return NotFound();
                 }
-                var obje1 = new Dictionary<string, object>();
-                obje1.Add("items", db);
-                obje1.Add("number", number);
-                return Ok(obje1);
+
+                return Ok(new
+                {
+                    items = db,
+                    number = number
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+        }
+        [HttpGet("id={id}", Name = "GetUserProfile")]
+        public IActionResult GetUserProfile(int id)
+        {
+            try
+            {
+                var user = _userContext.Users
+                    .Where(u => u.Id == id)
+                    .Select(p => p.Profile)
+                    .Select(n => new
+                    {
+                        userId = n.User.Id,
+                        lookingForAJob = n.LookingForAJob,
+                        lookingForAJobDescription = n.LookingForAJobDescription,
+                        contacts = n.Contacts,
+                        photoUrl = n.User.PhotoUrl,
+                        name = n.User.Name
+                    }).FirstOrDefault();
+                if (user == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(user);
             }
             catch (Exception ex)
             {
