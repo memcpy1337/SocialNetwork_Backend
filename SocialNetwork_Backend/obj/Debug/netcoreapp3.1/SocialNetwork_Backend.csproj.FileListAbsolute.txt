@@ -140,5 +140,9 @@ C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\obj\
 C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\obj\Debug\netcoreapp3.1\SocialNetwork_Backend.pdb
 C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\obj\Debug\netcoreapp3.1\SocialNetwork_Backend.genruntimeconfig.cache
 C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\obj\Debug\netcoreapp3.1\SocialNetwork_Backend.csprojAssemblyReference.cache
+C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\obj\Debug\netcoreapp3.1\SocialNetwork_Backend.csproj.CoreCompileInputs.cache
 C:\Users\artem\Documents\GitHub\SocialNetwork_Backend\SocialNetwork_Backend\obj\Debug\netcoreapp3.1\SocialNetwork_Backend.MvcApplicationPartsAssemblyInfo.cache

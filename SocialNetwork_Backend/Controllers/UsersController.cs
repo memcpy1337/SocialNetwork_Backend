@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SocialNetwork_Backend.BDContext;
+using SocialNetwork_Backend.Filters;
 using SocialNetwork_Backend.Models;
 using System;
 using System.Collections.Generic;
@@ -101,6 +102,11 @@ namespace SocialNetwork_Backend.Controllers
                 return BadRequest();
             }
         }
+        [HttpGet(Name = "GetMe")]
+        public IActionResult GetMe()
+        {
 
+            return Ok(new { });
+        }
     }
 }

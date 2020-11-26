@@ -35,6 +35,8 @@ namespace SocialNetwork_Backend.BDContext
                 {
                     Id = i,
                     Name = "Robot-" + robotid,
+                    Login = "robot" + robotid,
+                    Password = robotid.ToString(),
                     UniqueUrlName = "robotpage-" + robotid,
                     PhotoUrl = "https://mirprogramm.ru/wp-content/uploads/2018/02/Discord-logo.png",
                     status = "I am slave " + robotid,

@@ -9,6 +9,8 @@ namespace SocialNetwork_Backend.Models
     {
         public string Name { get; set; }
         public int Id { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
         public string UniqueUrlName { get; set; }
         public string PhotoUrl { get; set; }
         public string status { get; set; }
