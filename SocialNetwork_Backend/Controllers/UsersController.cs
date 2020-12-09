@@ -6,6 +6,7 @@ using SocialNetwork_Backend.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace SocialNetwork_Backend.Controllers
@@ -103,10 +104,41 @@ namespace SocialNetwork_Backend.Controllers
             }
         }
         [HttpGet(Name = "GetMe")]
+        [JwtAuthentication]
         public IActionResult GetMe()
         {
-
-            return Ok(new { });
+            try
+            {
+                var user = User.Identities.FirstOrDefault();
+                if (user.IsAuthenticated)
+                {
+                    return Ok(new
+                    {
+                        auth = true,
+                        data = new
+                        {
+                            username = user.Claims
+                            .Where(c => c.Type == ClaimTypes.Name)
+                            .Select(c => c.Value)
+                            .SingleOrDefault(),
+                            id = user.Claims
+                            .Where(t => t.Type == ClaimTypes.SerialNumber)
+                            .Select(s => s.Value)
+                            .SingleOrDefault()
+                        }
+                    });
+                }
+                else
+                {
+                    return NotFound(new
+                    {
+                        auth = false
+                    });
+                }
+            }catch (Exception ex)
+            {
+                return BadRequest();
+            }
         }
     }
 }
